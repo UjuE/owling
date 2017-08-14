@@ -50,6 +50,7 @@ class Owling(data: Data) {
       .map(bankEntry => bankEntry.debitOrCredit)
       .sum
 
+
   lazy val totalExpenditureByLabel: Map[String, Double] =
     data.bankEntries
       .filter(bankEntry => bankEntry.isExpenditure)
